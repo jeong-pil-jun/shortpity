@@ -66,6 +66,7 @@ function ProjectView({ projectId }: { projectId: string }) {
 
 function NewProject() {
   const { user } = useAuth()
+  const { user2 } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
   const [busy, setBusy] = useState<{ label: string; progress: number } | null>(null)
